@@ -3,6 +3,10 @@ Running the following command will start Keycloak with Postgres and a sample rea
 
 `docker-compose -f docker/app.yml up`
 
+Running the docker-compose will create a keycloak directory in your root folder and use that for saving
+all the Postgres and Keycloak files that you will need to sustain a restart or cleaning up of the image.
+*This will not work in a Windows environment.*
+
 ## Access Keycloak
 You should see Keycloak admin portal up and running at http://localhost:9080
 
@@ -32,5 +36,4 @@ The code for the above is on github: https://github.com/keycloak/keycloak-nodejs
 Following extension seems to support the integration of CKAN and Keycloak:
 
 https://github.com/etri-odp/ckanext-keycloak
-
 
